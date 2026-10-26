@@ -22,8 +22,6 @@ public class ContoCorrente {
         this.numMovimenti = 0;
     }
 
-    // ---------- Operazioni ----------
-
     public boolean versa(double importo) {
         if (importo > 0 && numMovimenti < movimenti.length) {
             saldo = saldo + importo;
@@ -44,8 +42,6 @@ public class ContoCorrente {
         return false;
     }
 
-    // ---------- Consultazione ----------
-
     public double getSaldo() {
         return saldo;
     }
@@ -63,8 +59,6 @@ public class ContoCorrente {
             }
         }
     }
-
-    // ---------- Statistiche sui versamenti ----------
 
     public double totaleVersamenti() {
         double totale = 0;
@@ -103,8 +97,6 @@ public class ContoCorrente {
         }
         return max;
     }
-
-    // ---------- Statistiche sui prelievi ----------
 
     public double totalePrelievi() {
         double totale = 0;
